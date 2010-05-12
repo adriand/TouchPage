@@ -1,0 +1,30 @@
+!!!
+%html{ :lang => "en" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }/
+    %title
+      = "#{@page_title} |" if @page_title
+      Respite
+    %link{ :href => "/style.css", :title => "no title", :rel => "stylesheet", :media => "screen", :type => "text/css", :charset => "utf-8" }
+    %script{ :type => "text/javascript", :src => "/jquery.js" }
+    %script{ :type => "text/javascript", :src => "/jquery.corner.js" }
+    = erb :layout_js
+    = @js
+  %body
+    #container
+      #header
+        %a{:href => "/"}
+          Respite
+      #content
+
+        - if params[:notice]
+          .note.notice= params[:notice]
+        - if params[:failure]
+          .note.failure= params[:failure]
+        
+        = yield
+      
+      .spacer/
+    #footer
+      %p
+        &copy; 2010 Adrian Duyzer.

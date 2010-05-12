@@ -1,0 +1,175 @@
+// Document setup and resets
+
+body
+  font: 13px/18px Helvetica, Arial, sans-serif
+  margin: 0px
+  padding: 0px
+  background: #3e9dd4 url(/gradient.gif) repeat-x fixed left bottom
+  color: #FFFFFF
+
+*
+  margin: 0px
+  padding: 0px
+
+
+p, h1, h2, h3
+  margin-bottom: 15px
+
+
+.spacer
+  clear: both
+  margin: 0
+  padding: 0
+  border: 0
+  height: 0
+  width: 0
+
+
+a
+  color: #3e9dd4
+  font-weight: bold
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+  &:visited
+    color: #3e9dd4
+    
+  img
+    border: 0px
+
+
+// Structure
+
+#header
+  margin: 0px
+  padding: 40px 0px 20px
+  a, a:hover, a:visited
+    color: white
+    font-size: 48px
+    text-decoration: none
+
+#content
+  background: #FFFFFF
+  color: #333333
+  padding: 30px
+  margin: 0px
+  font-size: 15px
+  line-height: 18px
+
+
+#footer
+  font-size: 10px
+  line-height: 10px
+  margin: 0px
+  padding: 20px 0px 50px
+  color: black
+
+
+#container
+  margin: 0px auto
+  padding: 0px
+  width: 1000px
+
+
+// Headers
+
+h1
+  font-size: 30px
+  line-height: 48px
+  margin: 0px 0px 20px
+  padding: 0px
+  font-weight: bold
+
+h2
+  font-size: 24px
+  line-height: 24px
+  margin: 0px
+  padding: 0px 0px 15px
+  font-weight: normal
+
+
+// Other content
+
+form#sing
+  input
+    font-size: 18px
+
+.blur
+  color: grey
+
+.callout
+  background: #E8E8E8
+  margin: 0px 0px 20px
+  padding: 15px
+  font-size: 15px
+  line-height: 15px
+
+  h1
+    font-size: 48px
+    line-height: 56px
+    color: #000000
+    margin: 0px
+    padding: 0px
+
+  p
+    line-height: 18px
+
+#verses
+  margin-top: 40px
+  margin-bottom: 40px
+  
+  .verse
+    margin-bottom: 35px
+    border-left: 3px solid grey
+    padding-left: 15px
+    
+    .singer
+      float: left
+      font-size: 18px
+      width: 190px
+      padding-left: 20px
+      
+    .line
+      font-size: 18px
+      float: left
+      padding-right: 20px
+      width: 470px
+
+// Status messages
+
+.note
+  margin: 0px 0px 15px
+  padding: 5px 5px 5px 10px
+  font-size: 13px
+  line-height: 17px
+  border-radius: 5px
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  
+  &.notice
+    background-color: #FCFB83
+
+  &.failure
+    background-color: #FFB5A8
+    color: red
+
+// Person view
+#progress
+  img.loader
+    float: left
+    padding-right: 20px
+
+  table
+    float: left
+    width: 80%
+    
+    td
+      width: 55%
+  
+    td, th
+      display: none
+
+#results
+  display: none
