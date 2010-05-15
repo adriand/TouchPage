@@ -1,2 +1,3 @@
 db/*.sqlite3
 config/production.rb
+public/system

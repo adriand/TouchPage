@@ -1,0 +1,6 @@
+%table
+  - @items.each do |item|
+    %tr
+      %td= item.title
+      %td
+        %a{:href => "/destroy/#{item.id}"} Destroy
