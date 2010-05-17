@@ -26,6 +26,7 @@ DataMapper.auto_upgrade!
 
 get '/' do
   @items = Item.all
+  @js = erb :index_js
   haml :index
 end
 
