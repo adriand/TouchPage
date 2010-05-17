@@ -1,13 +1,9 @@
 require 'rubygems'
 require 'sinatra'
+ 
+set :environment,  :production
+disable :run
 
-set(:run, false)
-set(:env, 'production')
-set(:root, File.dirname(__FILE__))
+require 'touchpage'
 
 run Sinatra::Application
-
-log = File.new("log/sinatra.log", "a+")
-$stdout.reopen(log)
-$stderr.reopen(log)
-require 'tweetsworth'

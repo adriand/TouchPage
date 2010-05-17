@@ -6,10 +6,9 @@
       = "#{@page_title} |" if @page_title
       TouchPage
     %link{ :href => "/style.css", :title => "no title", :rel => "stylesheet", :media => "screen", :type => "text/css", :charset => "utf-8" }
-    %link{ :href => "/facebox/facebox.css", :title => "no title", :rel => "stylesheet", :media => "screen", :type => "text/css", :charset => "utf-8" }    
     %script{ :type => "text/javascript", :src => "/jquery.js" }
     %script{ :type => "text/javascript", :src => "/jquery.corner.js" }
-    %script{ :type => "text/javascript", :src => "/facebox/facebox.js" }
+    %script{ :type => "text/javascript", :src => "/jquery.masonry.min.js" }
     = erb :layout_js
     = @js
   %body

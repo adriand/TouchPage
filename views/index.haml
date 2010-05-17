@@ -1,8 +1,9 @@
-- @items.each do |item|
-  .item
-    %a{:href => item.uri}
-      %img{:src => item.image(:thumb)}
-      .label= item.title
+#items
+  - @items.each do |item|
+    .item
+      %a{:href => item.uri}
+        %img{:src => item.image(:thumb)}
+        .label= item.title
       
 
-.spacer
+  .spacer
