@@ -4,7 +4,7 @@ body
   font: 13px/18px Helvetica, Arial, sans-serif
   margin: 0px
   padding: 0px
-  background: #3e9dd4 url(/gradient.gif) repeat-x fixed left bottom
+  background-color: #5E4BE8
   color: #FFFFFF
 
 *
@@ -51,7 +51,7 @@ a
     text-decoration: none
 
 #content
-  background: #FFFFFF
+  background: #A1F98E
   color: #333333
   padding: 30px
   margin: 0px
@@ -70,7 +70,7 @@ a
 #container
   margin: 0px auto
   padding: 0px
-  width: 1000px
+  width: 90%
 
 
 // Headers
@@ -92,50 +92,22 @@ h2
 
 // Other content
 
-form#sing
-  input
-    font-size: 18px
-
-.blur
-  color: grey
-
-.callout
-  background: #E8E8E8
-  margin: 0px 0px 20px
-  padding: 15px
-  font-size: 15px
-  line-height: 15px
-
-  h1
-    font-size: 48px
-    line-height: 56px
-    color: #000000
-    margin: 0px
-    padding: 0px
-
-  p
-    line-height: 18px
-
-#verses
-  margin-top: 40px
-  margin-bottom: 40px
+.item
+  background-color: #FC384B
+  float: left
+  padding: 20px
+  color: #fff
+  position: relative
+  margin-right: 30px
   
-  .verse
-    margin-bottom: 35px
-    border-left: 3px solid grey
-    padding-left: 15px
-    
-    .singer
-      float: left
-      font-size: 18px
-      width: 190px
-      padding-left: 20px
-      
-    .line
-      font-size: 18px
-      float: left
-      padding-right: 20px
-      width: 470px
+.item .label
+  position: absolute
+  left: 20px
+  top: 20px
+  background-color: #56F236
+  color: #BD4F59
+  padding: 2px 5px 2px 5px
+
 
 // Status messages
 
@@ -154,22 +126,3 @@ form#sing
   &.failure
     background-color: #FFB5A8
     color: red
-
-// Person view
-#progress
-  img.loader
-    float: left
-    padding-right: 20px
-
-  table
-    float: left
-    width: 80%
-    
-    td
-      width: 55%
-  
-    td, th
-      display: none
-
-#results
-  display: none

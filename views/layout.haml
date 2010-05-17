@@ -4,7 +4,7 @@
     %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }/
     %title
       = "#{@page_title} |" if @page_title
-      Respite
+      TouchPage
     %link{ :href => "/style.css", :title => "no title", :rel => "stylesheet", :media => "screen", :type => "text/css", :charset => "utf-8" }
     %link{ :href => "/facebox/facebox.css", :title => "no title", :rel => "stylesheet", :media => "screen", :type => "text/css", :charset => "utf-8" }    
     %script{ :type => "text/javascript", :src => "/jquery.js" }
@@ -16,7 +16,7 @@
     #container
       #header
         %a{:href => "/"}
-          Respite
+          TouchPage
       #content
 
         - if params[:notice]

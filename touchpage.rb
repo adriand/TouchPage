@@ -12,7 +12,7 @@ configure :development do
   Sinatra::Application.reset!
   use Rack::Reloader
   
-  DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/bottles.sqlite3")  
+  DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/touchpage.sqlite3")  
 end
 
 configure :production do

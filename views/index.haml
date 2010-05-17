@@ -1,6 +1,8 @@
 - @items.each do |item|
   .item
-    = item.title
-    %br/
     %a{:href => item.uri}
       %img{:src => item.image(:thumb)}
+      .label= item.title
+      
+
+.spacer
