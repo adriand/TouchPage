@@ -11,13 +11,9 @@ require 'ruby-debug'
 configure :development do
   Sinatra::Application.reset!
   use Rack::Reloader
-  
-  DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/touchpage.sqlite3")  
 end
 
-configure :production do
-  require '/var/apps/respite/shared/config/production.rb'
-end
+DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/touchpage.sqlite3")
 
 require 'classes'
 
