@@ -1,6 +1,34 @@
 <script type="text/javascript">
-  $( function() {
+  function scroll(direction) {
+    position = $(window).scrollTop();
+    if (direction == "up") {
+      $(window).scrollTop(position - 10);
+    } else {
+      $(window).scrollTop(position + 10);
+    }
+    if (scrolling) { setTimeout("scroll('" + direction + "')", 10); }
+  }
+  
+  $( function() {  
     $('.item').corner("12px");
     $("#items").masonry({ columnWidth: 280 });
+    $("#up").mouseenter( function() {
+      scrolling = true;
+      scroll("up");
+    });
+    $("#down").mouseenter( function() {
+      scrolling = true;
+      scroll("down");
+    });
+    
+    $("#up, #down").mouseleave( function () {
+      scrolling = false;
+      window.clearTimeout();
+    });
+    
+    $("#up #down").click( function() { return false; });
   });
+  
+  var position = 0;
+  var scrolling = false;
 </script>

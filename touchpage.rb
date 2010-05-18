@@ -17,8 +17,8 @@ DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/touchpage.sqlite3")
 
 require 'classes'
 
-DataMapper.auto_upgrade!
-#DataMapper.auto_migrate!
+#DataMapper.auto_upgrade!
+DataMapper.auto_migrate!
 
 get '/' do
   @items = Item.all
