@@ -13,7 +13,7 @@ configure :development do
   use Rack::Reloader
 end
 
-DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/touchpage.sqlite3")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || 'sqlite3://touchpage.db')
 
 require 'classes'
 
