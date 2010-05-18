@@ -6,14 +6,14 @@ require 'dm-timestamps'
 require 'haml'
 require 'sass'
 require 'dm-paperclip'
+require 'ruby-debug'
 
 configure :development do
-  require 'ruby-debug'
   Sinatra::Application.reset!
   use Rack::Reloader
 end
 
-DataMapper.setup(:default, "sqlite3://touchpage.sqlite3")  
+DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/touchpage.sqlite3")  
 
 require 'classes'
 
