@@ -9,7 +9,7 @@
     if (scrolling) { setTimeout("scroll('" + direction + "')", 10); }
   }
   
-  $(document).ready( function() {  
+  $(window).load( function() {  
     $('.item').corner("12px");
     $("#items").masonry({ columnWidth: 260 });
     $("#up").mouseenter( function() {
