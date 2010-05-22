@@ -2,11 +2,11 @@
   function scroll(direction) {
     position = $(window).scrollTop();
     if (direction == "up") {
-      $(window).scrollTop(position - 5);
+      $(window).scrollTop(position - 10);
     } else {
-      $(window).scrollTop(position + 5);
+      $(window).scrollTop(position + 10);
     }
-    if (scrolling) { setTimeout("scroll('" + direction + "')", 5); }
+    if (scrolling) { setTimeout("scroll('" + direction + "')", 10); }
   }
   
   $(document).ready( function() {  
