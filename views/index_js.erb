@@ -9,9 +9,9 @@
     if (scrolling) { setTimeout("scroll('" + direction + "')", 10); }
   }
   
-  $( function() {  
+  $(document).ready( function() {  
     $('.item').corner("12px");
-    $("#items").masonry({ columnWidth: 280 });
+    $("#items").masonry({ columnWidth: 260 });
     $("#up").mouseenter( function() {
       scrolling = true;
       scroll("up");
